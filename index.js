@@ -26,7 +26,7 @@ let pokemons = [
   },
   { 
     numero:2,
-    nome: "Charmander",
+    nome: "Charmanders",
     tipo: "Fire",
     imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
     descricao:"It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
