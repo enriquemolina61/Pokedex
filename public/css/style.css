@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial;
+}
+header{
+    padding: 3rem;
+    background-color: red;
+}
+header h1{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+main{
+    margin: 0 10rem 0 10rem;
+}
+section#cards{
+    display: flex;  
+    margin-top: 5rem;   
+    justify-content: space-evenly;
+    
+    
+}
+section#cards div.card{
+    width: 20rem;
+    box-shadow: 5px 5px 5px 5px #00000020;
+    margin-left: 2rem;
+    padding: 1rem;
+}
+
+section#cards div.card img{
+    width: 100%;
+}
+
+section#cards div.card div.numero_do_pokemon{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+section#cards div.card h2.nome_do_pokemon{
+    
+    text-align: center;
+    margin-bottom: 1rem;
+}
+section#cards div.card div.tipo_pokemon{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+section#cards div.card div.descricao_pokemon{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+section#cards div.card div.altura_pokemon{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+section#cards div.card div.peso_pokemon{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+section#cards div.card div.categoria_pokemon{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+section#cards div.card div.habilidade_pokemon{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
