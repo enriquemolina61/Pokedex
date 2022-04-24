@@ -3,42 +3,92 @@
     margin: 0;
     padding: 0;
     font-family: Roboto, Arial;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    flex-wrap: wrap;
 }
 header{
-    padding: 3rem;
+    height: 10%;
+    display: flex;
     background-color: red;
+    justify-content: space-between;
+    align-items: center;
 }
-header h1{
-    color: #fff;
-    font-size: 3rem;
+header img#logo{
+    height: 100%;
+    padding-left: 1rem;
+    
+}
+
+
+body h1{
+    color: rgb(255, 131, 131);
+    font-size: 2rem;
     text-align: center;
 }
-header div.links a{
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+    padding-right: 1rem;
+    
+}
+header a{
     color: #fff;
-    text-align: center;
-    text-decoration: none;
+    text-decoration: solid;
+}
+header a:hover{
+    color: black;
 }
 main{
-    margin: 0 10rem 0 10rem;
+    min-height: 80%; 
+    background-color: #fffeb3;
 }
 section#cards{
+    width: 100%;
     display: flex;  
-    margin-top: 5rem;   
     justify-content: space-evenly;
-    
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     
 }
+body a#click{
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+}
 section#cards div.card{
-    width: 20rem;
-    box-shadow: 5px 5px 5px 5px #00000020;
-    margin-left: 2rem;
+    width: 200px;
+    height: 300px;
     padding: 1rem;
+    background-color: rgb(255, 131, 131);
+      
+}
+section#cardsdetalhes{
+    margin-top: 5rem;
+    display: flex;  
+    justify-content: space-evenly;
+     
+}
+section#cardsdetalhes div.card{
+    width: 500px;
+    height: 500px;
+}
+section#cards div.card:hover{
+    background-color: #6AC2F7;
 }
 
 section#cards div.card img{
     width: 100%;
 }
-
+section#cardsdetalhes img{
+    width: 100%;
+}
 section#cards div.card div.numero_do_pokemon{
     text-align: center;
     margin-bottom: 1rem;
@@ -52,7 +102,7 @@ section#cards div.card div.tipo_pokemon{
     text-align: center;
     margin-bottom: 1rem;
 }
-section#cards div.card div.descricao_pokemon{
+/* section#cards div.card div.descricao_pokemon{
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -71,7 +121,7 @@ section#cards div.card div.categoria_pokemon{
 section#cards div.card div.habilidade_pokemon{
     text-align: center;
     margin-bottom: 1rem;
-}
+} */
 section#formulario{
     display: flex;
     justify-content: center;
@@ -91,19 +141,17 @@ section#formulario form input{
     padding: 0.5rem;
     font-size: 1rem;
     border: solid 2px rgb(196, 0, 0);
-    margin: 1rem;
+    margin-bottom: 5px;
+    
 }
 section#formulario form label{
-    margin: 0.5rem;
+    
     color: rgb(0, 0, 0);
 }
 section#formulario form button{
-    justify-content: center;
-    padding: 1rem;
-    width: 30%;
-    display: flex;
-    margin: 0 auto;
-    font-size: 2rem;
+    width: 100%;
+    margin: 10px;
+    font-size: 3rem;
     color: rgb(196, 0, 0);
     background-color: #fff;
     border-color:rgb(196, 0, 0) ;
@@ -113,4 +161,37 @@ section#formulario form button:hover{
     border-color:rgb(196, 0, 0) ;
     background-color: rgb(196, 0, 0);
     color: #fff ;
+}
+footer{
+    display: flex;
+    height: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: rgb(196, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+section#cardsdetalhes table{
+    width: 100%;
+    text-align: center;
+}
+table td{
+    border: 1px solid black
+}
+section a button#voltar{
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    margin: 3px auto;
+    font-size: 2rem;
+    color: #000000;
+    background-color: #fff;
+    border-color:rgb(0, 0, 0) ;
+    cursor: pointer;
+}
+section a button#voltar:hover{
+    color: #fff;
+    background-color: #000;
+    border-color: #fff ;
 }

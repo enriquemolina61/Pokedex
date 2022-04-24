@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Express!</title>
+
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>      
+    
+    <main>
+        <h1>Pokemon</h1>
+     <section id="cardsdetalhes">
+        <div class="card">
+            
+            <img src="<%= pokemon[0].imagem %> " alt="">
+            
+            <table>
+               <thead>
+                   <td colspan="2" ><h2>Detalhes</h2></td>
+               </thead>
+               <tbody>
+                <tr>
+                    <td colspan="2">Id: <%= pokemon[0].numero %></td> 
+                 </tr>
+                <tr>
+                    <td colspan="2">Nome: <%= pokemon[0].nome %></td> 
+                </tr>
+                <tr>
+                    <td colspan="2">Descrição: <%= pokemon[0].descricao %></td> 
+                 </tr>
+                 <tr>
+                    <td colspan="2">Altura: <%= pokemon[0].altura %></td> 
+                 </tr>
+                 <tr>
+                    <td colspan="2">Peso: <%= pokemon[0].peso %></td> 
+                 </tr>
+                 <tr>
+                    <td colspan="2">Caregoria: <%= pokemon[0].categoria %></td> 
+                 </tr>
+                 <tr>
+                    <td colspan="2">habilidade: <%= pokemon[0].habilidade %></td> 
+                 </tr>
+
+               </tbody>
+               <tfoot></tfoot>
+            </table>   
+            <a href="/" style="text-decoration: none;"><button id="voltar" type="submit">Voltar</button></a>
+            <!-- <div class="descricao_pokemon"><%= pokemon[0].descricao %> </div> 
+            <div class="altura_pokemon">Altura: <%= pokemon[0].altura %> </div> 
+            <div class="peso_pokemon">Peso: <%= pokemon[0].peso%> </div>     
+            <div class="categoria_pokemon">Categoria: <%= pokemon[0].categoria %> </div> 
+            <div class="habilidade_pokemon">Habilidade: <%= pokemon[0].habilidade %> </div>
+             
+             -->
+        </div>
+        </section>
+        
+    </main>
+    <%- include('./partials/footer.ejs') %>      
+</body>
+</html>

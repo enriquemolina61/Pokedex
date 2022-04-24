@@ -9,20 +9,15 @@
 
 </head>
 <body>
-        <header>
-            <h1>POKEDEX</h1>
-            <div class="links">
-                <a href="/">Pokedex</a>
-                <a href="/cadastro">Cadastro</a>
-            </div>
-        </header>
-        
+
+    <%- include('./partials/header.ejs') %>      
+
     <main>
-        <section id="formulario">
+        <section id="formulario"  >
 
-            <h2>Cadastre o novo pokemon:</h2>
+            <h1>Cadastre o novo pokemon:</h1>
 
-            <form action="">
+            <form action="/cadastro" method="POST">
 
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome">
@@ -53,5 +48,6 @@
             </form>
         </section>
     </main>
+    <%- include('./partials/footer.ejs') %>      
 </body>
 </html>

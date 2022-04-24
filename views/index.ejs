@@ -9,30 +9,26 @@
 
 </head>
 <body>
-        <header>
-            <h1>POKEDEX</h1>
-            <div class="links">
-                <a href="/">Pokedex</a>
-                <a href="/cadastro">Cadastro</a>
-            </div>
-        </header>
-        
+    <%- include('./partials/header.ejs') %>      
+    
     <main>
+        <h1>POKEDEX</h1>
      <section id="cards">
         <% pokemons.forEach(element =>{ %> 
-        <div class="card">
-            <div class="numero_do_pokemon">Id:<%= element.numero %> </div>
+            <a id="click" href="/detalhes/<%= element.numero %> "> <div class="card">
+            <!-- <div class="numero_do_pokemon">Id:<%= element.numero %> </div> -->
             <img src="<%= element.imagem %> " alt="">
             <h2 class="nome_do_pokemon"><%= element.nome %> </h2>
             <div class="tipo_pokemon">Tipo: <%= element.tipo %> </div>
-            <div class="descricao_pokemon"><%= element.descricao %> </div> 
+            <!-- <div class="descricao_pokemon"><%= element.descricao %> </div> 
             <div class="altura_pokemon">Altura: <%= element.altura %> </div> 
             <div class="peso_pokemon">Peso: <%= element.peso%> </div>     
             <div class="categoria_pokemon">Categoria: <%= element.categoria %> </div> 
-            <div class="habilidade_pokemon">Habilidade: <%= element.habilidade %> </div> 
-        </div>
+            <div class="habilidade_pokemon">Habilidade: <%= element.habilidade %> </div>  -->
+        </div></a>
         <%}) %>
         </section>
     </main>
+    <%- include('./partials/footer.ejs') %>      
 </body>
 </html>
