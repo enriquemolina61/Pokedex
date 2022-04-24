@@ -52,6 +52,13 @@ app.get("/", (req, res) => {
   res.render("index.ejs", {
     pokemons,
   });
+  
+});
+app.get("/cadastro", (req, res) => {
+  res.render("cadastro.ejs", {
+    pokemons,
+  });
+  
 });
 
 app.get("/detalhes", (req, res) => {

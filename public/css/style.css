@@ -13,6 +13,11 @@ header h1{
     font-size: 3rem;
     text-align: center;
 }
+header div.links a{
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
 main{
     margin: 0 10rem 0 10rem;
 }
@@ -67,4 +72,45 @@ section#cards div.card div.habilidade_pokemon{
     text-align: center;
     margin-bottom: 1rem;
 }
-
+section#formulario{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+section#formulario h2{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    color: rgb(196,0,0);
+    
+}
+section#formulario form input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: solid 2px rgb(196, 0, 0);
+    margin: 1rem;
+}
+section#formulario form label{
+    margin: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+section#formulario form button{
+    justify-content: center;
+    padding: 1rem;
+    width: 30%;
+    display: flex;
+    margin: 0 auto;
+    font-size: 2rem;
+    color: rgb(196, 0, 0);
+    background-color: #fff;
+    border-color:rgb(196, 0, 0) ;
+    cursor: pointer;
+}
+section#formulario form button:hover{
+    border-color:rgb(196, 0, 0) ;
+    background-color: rgb(196, 0, 0);
+    color: #fff ;
+}

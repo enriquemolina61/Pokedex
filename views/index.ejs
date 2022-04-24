@@ -11,13 +11,17 @@
 <body>
         <header>
             <h1>POKEDEX</h1>
+            <div class="links">
+                <a href="/">Pokedex</a>
+                <a href="/cadastro">Cadastro</a>
+            </div>
         </header>
         
     <main>
      <section id="cards">
         <% pokemons.forEach(element =>{ %> 
         <div class="card">
-            <div class="numero_do_pokemon"><%= element.numero %> </div>
+            <div class="numero_do_pokemon">Id:<%= element.numero %> </div>
             <img src="<%= element.imagem %> " alt="">
             <h2 class="nome_do_pokemon"><%= element.nome %> </h2>
             <div class="tipo_pokemon">Tipo: <%= element.tipo %> </div>
