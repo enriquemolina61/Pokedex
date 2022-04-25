@@ -174,7 +174,7 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     background-color: rgb(196, 0, 0);
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 section#cardsdetalhes table{

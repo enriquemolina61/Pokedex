@@ -16,4 +16,4 @@ As ferramentas usadas para este projeto são:
 ## Contato
 <a href="https://www.linkedin.com/in/enrique-azevedo-molina-306573140/" target="blank">
     <img src="https://img.icons8.com/office/80/000000/linkedin.png"/>
-</a
+</a>
