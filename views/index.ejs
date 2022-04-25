@@ -12,7 +12,13 @@
     <%- include('./partials/header.ejs') %>      
     
     <main>
-        <h1>POKEDEX</h1>
+        <h1>Pokedex</h1>
+
+        <% if(message != "") {  %>
+            <section id="message">
+                    <p>Cadastrado com sucesso!</p> <span id="close">&times;</span>
+            </section>
+            <% }  %>
      <section id="cards">
         <% pokemons.forEach(element =>{ %> 
             <a id="click" href="/detalhes/<%= element.numero %> "> <div class="card">
@@ -30,5 +36,6 @@
         </section>
     </main>
     <%- include('./partials/footer.ejs') %>      
+    <script src="/js/script.js"></script>
 </body>
 </html>

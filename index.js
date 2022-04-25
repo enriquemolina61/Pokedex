@@ -12,7 +12,7 @@ const port = 3001;
 app.listen(port, () => {
   console.log(`Rodando na porta ${port}`);
 });
-
+let message = "";
 let pokemons = [
   {
     numero: 1,
@@ -54,11 +54,16 @@ let pokemons = [
 app.get("/", (req, res) => {
   res.render("index.ejs", {
     pokemons,
+    message
   });
 });
 app.get("/cadastro", (req, res) => {
+  setTimeout(() => {
+    message = "";
+  }, 1000);
   res.render("cadastro.ejs", {
     pokemons,
+    
   });
 });
 
@@ -75,9 +80,8 @@ app.get("/detalhes/:id", (req, res) => {
 });
 app.post("/cadastro", (req, res) => {
   const pokemon = req.body;
-  console.log(pokemons.length);
   pokemon.numero = pokemons.length + 1;
   pokemons.push(pokemon);
-  console.log(pokemon);
+  message = "Cadastrado com sucesso!"
   res.redirect("/");
 });

@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Express!</title>
-
-</head>
-<body>
-
-    <%- include('./partials/header.ejs') %>      
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
 
     <main>
-        <section id="formulario"  >
-
-            <h1>Cadastre o novo pokemon:</h1>
-
-            <form action="/cadastro" method="POST">
-
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome">
-
-                <label for="tipo">Tipo:</label>
-                <input type="text" name="tipo" id="tipo">
-
-                <label for="imagem">Imagem:</label>
-                <input type="text" name="imagem" id="imagem">
-
-                <label for="descricao">Descricao</label>
-                <input type="text" name="descricao" id="descricao">
-
-                <label for="altura">Altura:</label>
-                <input type="text" name="altura" id="altura">
-
-                <label for="peso">Peso:</label>
-                <input type="text" name="peso" id="peso">
-
-                <label for="categoria">Categoria:</label>
-                <input type="text" name="categoria" id="categoria">
-
-                <label for="habilidade">Habilidade:</label>
-                <input type="text" name="habilidade" id="habilidade">
-
-                <button id="cadastrar" type="submit" onclick="validar()">Cadastrar</button>
-
-            </form>
-        </section>
-    </main>
     
-    <%- include('./partials/footer.ejs') %>      
+      <section id="formulario">
+        <h1>Cadastre o novo pokemon:</h1>
+
+        <form
+          name="formCadastro"
+          action="/cadastro"
+          method="POST"
+        >
+          <label for="nome">Nome:</label>
+          <input required type="text" name="nome" id="nome" />
+
+          <label for="tipo">Tipo:</label>
+          <input required type="text" name="tipo" id="tipo" />
+
+          <label for="imagem">Imagem:</label>
+          <input required type="text" name="imagem" id="imagem" />
+
+          <label for="descricao">Descricao</label>
+          <input required type="text" name="descricao" id="descricao" />
+
+          <label for="altura">Altura:</label>
+          <input required type="text" name="altura" id="altura" />
+
+          <label for="peso">Peso:</label>
+          <input required type="text" name="peso" id="peso" />
+
+          <label for="categoria">Categoria:</label>
+          <input required type="text" name="categoria" id="categoria" />
+
+          <label for="habilidade">Habilidade:</label>
+          <input required type="text" name="habilidade" id="habilidade" />
+
+          <button id="cadastrar" type="submit">Cadastrar</button>
+
+        </form>
+      </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
     <script src="/js/script.js"></script>
-</body>
+  </body>
 </html>
