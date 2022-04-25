@@ -54,8 +54,9 @@ let pokemons = [
 app.get("/", (req, res) => {
   res.render("index.ejs", {
     pokemons,
-    message
+    message,
   });
+  message = "";
 });
 app.get("/cadastro", (req, res) => {
   setTimeout(() => {
@@ -63,7 +64,6 @@ app.get("/cadastro", (req, res) => {
   }, 1000);
   res.render("cadastro.ejs", {
     pokemons,
-    
   });
 });
 
@@ -82,6 +82,6 @@ app.post("/cadastro", (req, res) => {
   const pokemon = req.body;
   pokemon.numero = pokemons.length + 1;
   pokemons.push(pokemon);
-  message = "Cadastrado com sucesso!"
+  message = ".";
   res.redirect("/");
 });
