@@ -79,5 +79,5 @@ app.post("/cadastro", (req, res) => {
   pokemon.numero = pokemons.length + 1;
   pokemons.push(pokemon);
   console.log(pokemon);
-  res.redirect("/cadastro");
+  res.redirect("/");
 });

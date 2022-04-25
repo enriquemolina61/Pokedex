@@ -54,8 +54,8 @@ section#cards{
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-bottom: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 10rem;
+    
     
 }
 body a#click{

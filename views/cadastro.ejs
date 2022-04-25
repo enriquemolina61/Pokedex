@@ -43,11 +43,13 @@
                 <label for="habilidade">Habilidade:</label>
                 <input type="text" name="habilidade" id="habilidade">
 
-                <button id="cadastrar" type="submit">Cadastrar</button>
+                <button id="cadastrar" type="submit" onclick="validar()">Cadastrar</button>
 
             </form>
         </section>
     </main>
+    
     <%- include('./partials/footer.ejs') %>      
+    <script src="/js/script.js"></script>
 </body>
 </html>
