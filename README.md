@@ -8,11 +8,10 @@ As ferramentas usadas para este projeto são:
 
 <div style="display: flex">
     <img src="https://img.icons8.com/color/96/000000/javascript--v1.png"/>
-    <img src="https://img.icons8.com/color/344/css3.png"/>
-    <img src="https://img.icons8.com/color/144/000000/html-5--v2.png"/>
+    <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/344/external-css-computer-science-flaticons-lineal-color-flat-icons.png"/>
+    <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/344/external-html-computer-programming-icons-flaticons-lineal-color-flat-icons-2.png"/>
     <img src="https://img.icons8.com/color/144/000000/nodejs.png"/>
     <img src="https://expressjs.com/images/express-facebook-share.png"/>
-    
 </div>
 
 ## Contato
